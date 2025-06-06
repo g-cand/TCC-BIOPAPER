@@ -1,1 +1,1 @@
-Site do projeto BioPaper, MVC esta sendo usado, mantenha todods os aequivos separados desta mesma forma.
+Site do projeto BioPaper, MVC esta sendo usado, mantenha todos os aequivos separados desta mesma forma.
