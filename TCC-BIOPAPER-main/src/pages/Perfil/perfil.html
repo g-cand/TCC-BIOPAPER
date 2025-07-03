@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuário - BioPaper</title>
+    </head>
+    <link rel="stylesheet" href="perfil.css">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+<body>
+
+    <header class="page-header">
+        <div class="header-logo">
+             <span class="logo-icon"></span>
+            <a href="/" class="logo-text">BioPaper</a>
+        </div>
+        <div class="header-actions">
+            <a href="#" class="button-exit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+  <path d="M6 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V3.33333C2 2.97971 2.14048 2.64057 2.39052 2.39052C2.64057 2.14048 2.97971 2 3.33333 2H6" stroke="#020817" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M10.667 11.3333L14.0003 8L10.667 4.66667" stroke="#020817" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M14 8H6" stroke="#020817" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg> Sair</a>
+        </div>
+    </header>
+
+<div class="mancha-direita"></div>
+<div class="mancha-esquerda"></div>
+
+    <main class="profile-page-container">
+        
+        <aside class="profile-sidebar">
+            <div class="user-card">
+                <div class="user-avatar">
+                    <span class="avatar-icon"><svg xmlns="http://www.w3.org/2000/svg" width="37" height="36" viewBox="0 0 37 36" fill="none">
+  <path d="M29.2002 31.5V28.5C29.2002 26.9087 28.5681 25.3826 27.4428 24.2574C26.3176 23.1321 24.7915 22.5 23.2002 22.5H14.2002C12.6089 22.5 11.0828 23.1321 9.95755 24.2574C8.83234 25.3826 8.2002 26.9087 8.2002 28.5V31.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M18.7002 16.5C22.0139 16.5 24.7002 13.8137 24.7002 10.5C24.7002 7.18629 22.0139 4.5 18.7002 4.5C15.3865 4.5 12.7002 7.18629 12.7002 10.5C12.7002 13.8137 15.3865 16.5 18.7002 16.5Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>
+                </div>
+                <h1 class="user-name">Usuário BioPaper</h1>
+                <p class="user-email">user@biopaper.com</p>
+
+                <nav class="profile-navigation">
+                    <ul>
+                        <li>
+                            <a href="#" class="profile-button">
+                                <span class="button-icon"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+  <path d="M8.44647 1.33334H8.15314C7.79952 1.33334 7.46038 1.47382 7.21033 1.72387C6.96028 1.97392 6.81981 2.31305 6.81981 2.66668V2.78668C6.81957 3.02049 6.75784 3.25014 6.64083 3.45257C6.52382 3.655 6.35563 3.8231 6.15314 3.94001L5.86647 4.10668C5.66378 4.2237 5.43385 4.28531 5.19981 4.28531C4.96576 4.28531 4.73583 4.2237 4.53314 4.10668L4.43314 4.05334C4.12718 3.87685 3.7637 3.82897 3.42247 3.92022C3.08125 4.01146 2.79017 4.23437 2.61314 4.54001L2.46647 4.79334C2.28998 5.0993 2.2421 5.46279 2.33334 5.80401C2.42459 6.14523 2.6475 6.43631 2.95314 6.61334L3.05314 6.68001C3.25466 6.79635 3.42222 6.9634 3.53917 7.16456C3.65613 7.36573 3.7184 7.59399 3.71981 7.82668V8.16668C3.72074 8.40162 3.65957 8.63264 3.5425 8.83635C3.42543 9.04005 3.25661 9.2092 3.05314 9.32668L2.95314 9.38668C2.6475 9.56371 2.42459 9.85479 2.33334 10.196C2.2421 10.5372 2.28998 10.9007 2.46647 11.2067L2.61314 11.46C2.79017 11.7657 3.08125 11.9886 3.42247 12.0798C3.7637 12.171 4.12718 12.1232 4.43314 11.9467L4.53314 11.8933C4.73583 11.7763 4.96576 11.7147 5.19981 11.7147C5.43385 11.7147 5.66378 11.7763 5.86647 11.8933L6.15314 12.06C6.35563 12.1769 6.52382 12.345 6.64083 12.5475C6.75784 12.7499 6.81957 12.9795 6.81981 13.2133V13.3333C6.81981 13.687 6.96028 14.0261 7.21033 14.2762C7.46038 14.5262 7.79952 14.6667 8.15314 14.6667H8.44647C8.80009 14.6667 9.13923 14.5262 9.38928 14.2762C9.63933 14.0261 9.77981 13.687 9.77981 13.3333V13.2133C9.78005 12.9795 9.84177 12.7499 9.95878 12.5475C10.0758 12.345 10.244 12.1769 10.4465 12.06L10.7331 11.8933C10.9358 11.7763 11.1658 11.7147 11.3998 11.7147C11.6339 11.7147 11.8638 11.7763 12.0665 11.8933L12.1665 11.9467C12.4724 12.1232 12.8359 12.171 13.1771 12.0798C13.5184 11.9886 13.8094 11.7657 13.9865 11.46L14.1331 11.2C14.3096 10.8941 14.3575 10.5306 14.2663 10.1893C14.175 9.84812 13.9521 9.55704 13.6465 9.38001L13.5465 9.32668C13.343 9.2092 13.1742 9.04005 13.0571 8.83635C12.94 8.63264 12.8789 8.40162 12.8798 8.16668V7.83334C12.8789 7.5984 12.94 7.36737 13.0571 7.16367C13.1742 6.95997 13.343 6.79082 13.5465 6.67334L13.6465 6.61334C13.9521 6.43631 14.175 6.14523 14.2663 5.80401C14.3575 5.46279 14.3096 5.0993 14.1331 4.79334L13.9865 4.54001C13.8094 4.23437 13.5184 4.01146 13.1771 3.92022C12.8359 3.82897 12.4724 3.87685 12.1665 4.05334L12.0665 4.10668C11.8638 4.2237 11.6339 4.28531 11.3998 4.28531C11.1658 4.28531 10.9358 4.2237 10.7331 4.10668L10.4465 3.94001C10.244 3.8231 10.0758 3.655 9.95878 3.45257C9.84177 3.25014 9.78005 3.02049 9.77981 2.78668V2.66668C9.77981 2.31305 9.63933 1.97392 9.38928 1.72387C9.13923 1.47382 8.80009 1.33334 8.44647 1.33334Z" stroke="#020817" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M8.2998 10C9.40437 10 10.2998 9.10457 10.2998 8C10.2998 6.89543 9.40437 6 8.2998 6C7.19524 6 6.2998 6.89543 6.2998 8C6.2998 9.10457 7.19524 10 8.2998 10Z" stroke="#020817" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>
+                                Editar Perfil
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="profile-button button-logout">
+                                <span class="button-icon"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+  <path d="M6.09961 14H3.43294C3.07932 14 2.74018 13.8595 2.49013 13.6095C2.24009 13.3594 2.09961 13.0203 2.09961 12.6667V3.33333C2.09961 2.97971 2.24009 2.64057 2.49013 2.39052C2.74018 2.14048 3.07932 2 3.43294 2H6.09961" stroke="#EF4444" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M10.7666 11.3333L14.0999 7.99999L10.7666 4.66666" stroke="#EF4444" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M14.0996 8H6.09961" stroke="#EF4444" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>
+                                Sair
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <section class="profile-main-content">
+            <div class="profile-info-card">
+                <header class="profile-info-header">
+                    <h1>Informações do Perfil</h1>
+                    <p>Visualize seus dados pessoais abaixo</p>
+                </header>
+
+                <form class="profile-form">
+                    <div class="form-group">
+                        <label for="nome-completo">Nome completo</label>
+                        <input type="text" id="nome-completo" name="nome-completo" value="" placeholder="" readonly>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" value="" placeholder="" readonly>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cnpj">CNPJ</label>
+                        <input type="text" id="cnpj" name="cnpj" value="" placeholder="" readonly>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" value="" placeholder="" readonly>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="endereco">Endereço</label>
+                        <input type="text" id="endereco" name="endereco" value="" placeholder="" readonly>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cidade-estado">Cidade/Estado</label>
+                        <input type="text" id="cidade-estado" name="cidade-estado" value="" placeholder="" readonly>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

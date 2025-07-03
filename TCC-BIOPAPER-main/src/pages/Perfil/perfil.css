@@ -1,0 +1,277 @@
+/* --- Reset Básico e Estilos Globais --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Adicionando a fonte 'Inter' do Google Fonts para maior fidelidade */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+body {
+    color: #000; 
+    background-color: #F0FAF6; 
+    background: linear-gradient(135deg, rgba(0, 255, 102, 0.30) 0%, rgba(0, 153, 68, 0.30) 100%), rgba(0, 0, 0, 0);
+    font-family: Poppins, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* ======================= CABEÇALHO DA PÁGINA ======================= */
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2.5rem;
+    background-color: #fff;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* Estilizando o placeholder do ícone do logo */
+.header-logo .logo-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: #00C853; /* Verde primário */
+    border-radius: 4px;
+    color: #00C853;
+}
+
+.header-actions .button-exit {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #495057;
+    transition: all 0.2s ease;
+}
+
+.header-actions .button-exit:hover {
+    background-color: #f8f9fa;
+    border-color: #adb5bd;
+}
+
+
+/* ======================= CONTEÚDO PRINCIPAL ======================= */
+.profile-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.5rem; /* AJUSTADO: Espaço entre os cards */
+    padding: 4rem 1rem;
+}
+
+/* --- Coluna da Esquerda: Menu do Perfil --- */
+.profile-sidebar .user-card {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    width: 300px;
+    border: 1px solid #f0f0f0;
+}
+
+.user-avatar {
+    width: 72px; /* AJUSTADO */
+    height: 72px; /* AJUSTADO */
+    border-radius: 50%;
+    background-color: #00C853;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem auto; /* AJUSTADO */
+}
+
+.user-avatar .avatar-icon {
+    font-size: 2.2rem; /* AJUSTADO */
+    color: #fff;
+}
+
+.user-name {
+    font-size: 1.1rem; /* AJUSTADO: Fonte menor */
+    font-weight: 700;
+    color: #1e2a3b;
+    margin-bottom: 0.25rem;
+}
+
+.user-email {
+    font-size: 0.8rem; /* AJUSTADO: Fonte menor */
+    color: #6c757d;
+    margin-bottom: 1.5rem; /* AJUSTADO: Espaço menor */
+}
+
+.profile-navigation ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* AJUSTADO: Espaço menor entre botões */
+}
+
+.profile-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem; /* AJUSTADO */
+    width: 100%;
+    padding: 0.7rem; /* AJUSTADO: Botão mais compacto */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.85rem; /* AJUSTADO: Fonte menor */
+    color: #1e2a3b;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.profile-button:hover {
+    border-color: #adb5bd;
+    background-color: #f8f9fa;
+}
+
+.profile-button .button-icon {
+    font-size: 1.1rem; /* AJUSTADO */
+    color: #495057;
+}
+
+.profile-button.button-logout .button-icon {
+    color: #ff4d4f;
+    font-weight: bold;
+}
+
+/* --- Coluna da Direita: Detalhes e Formulário --- */
+.profile-main-content {
+    width: 100%;
+    max-width: 600px;
+}
+
+.profile-info-card {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 2.5rem;
+    border: 1px solid #f0f0f0;
+}
+
+.profile-info-header {
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem; /* AJUSTADO */
+}
+
+.profile-info-header h2 {
+    font-size: 1.3rem; /* AJUSTADO: Fonte menor */
+    font-weight: 700;
+    color: #1e2a3b;
+    margin-bottom: 0.25rem;
+}
+
+.profile-info-header p {
+    font-size: 0.9rem; /* AJUSTADO: Fonte menor */
+    color: #000000;
+}
+
+.form-group {
+    margin-bottom: 1.25rem; /* AJUSTADO: Espaço menor */
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.85rem; /* AJUSTADO: Fonte menor */
+    color: #495057;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input[readonly] {
+    width: 100%;
+    padding: 0.5rem 1rem; /* AJUSTADO: Input mais compacto */
+    border-radius: 10px;
+    border: 1px solid #E2E8F0;
+    background-color: #ffffff;
+    font-size: 0.9rem; /* AJUSTADO */
+    color: #495057;
+    font-family: inherit;
+}
+.form-group input[readonly]:focus {
+    outline: none;
+}
+
+.mancha-direita {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 768px;
+  height: 432px;
+  flex-shrink: 0;
+  border-radius: 9999px;
+  background: rgba(0, 200, 83, 0.20);
+  filter: blur(32px);
+  z-index: -1;
+}
+
+.mancha-esquerda {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 768px;
+  height: 432px;
+  flex-shrink: 0;
+  border-radius: 9999px;
+  background: rgba(0, 200, 83, 0.20);
+  filter: blur(32px);
+  z-index: -1;
+}
+
+/* ======================= RESPONSIVIDADE ======================= */
+@media (max-width: 992px) {
+    .profile-page-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding-top: 2rem;
+    }
+    .profile-sidebar .user-card {
+        width: 100%;
+        max-width: 400px;
+    }
+    .profile-main-content {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-header {
+        padding: 1rem;
+    }
+    .profile-page-container {
+        padding: 1.5rem;
+    }
+    .profile-info-card {
+        padding: 1.5rem;
+    }
+    .profile-info-header h2 {
+        font-size: 1.2rem;
+    }
+}
